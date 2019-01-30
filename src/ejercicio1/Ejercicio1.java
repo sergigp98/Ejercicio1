@@ -11,6 +11,7 @@ package ejercicio1;
  */
 
 import java.util.Scanner;
+import java.text.DecimalFormat;
 public class Ejercicio1 {
 
     /**
@@ -23,6 +24,7 @@ public class Ejercicio1 {
         double primeranota;
         double segundanota;
         double mediadeseada;
+        DecimalFormat redondeo = new DecimalFormat("#.##");
         
         System.out.println("Introduce la nota del primer examen: ");
         primeranota = sc.nextDouble();        
@@ -33,7 +35,7 @@ public class Ejercicio1 {
         
         segundanota = (mediadeseada-primeranota)/0.6;
         
-        System.out.println("Para tener un "+mediadeseada+" en el trimestre necesitas sacar un "+segundanota+" en el segundo examen");
+        System.out.println("Para tener un "+mediadeseada+" en el trimestre necesitas sacar un "+redondeo.format(segundanota)+" en el segundo examen");
         
         
         
