@@ -31,6 +31,10 @@ public class Ejercicio1 {
         System.out.println("¿Qué nota quieres sacar en el trimestre: ");
         mediadeseada= sc.nextDouble();
         
+        segundanota = (mediadeseada-primeranota)/0.6;
+        
+        System.out.println("Para tener un "+mediadeseada+" en el trimestre necesitas sacar un "+segundanota+" en el segundo examen");
+        
         
         
         
