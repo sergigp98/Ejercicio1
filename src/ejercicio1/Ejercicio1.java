@@ -26,11 +26,11 @@ public class Ejercicio1 {
         double mediadeseada;
         DecimalFormat redondeo = new DecimalFormat("#.##");
         
-        System.out.println("Introduce la nota del primer examen: ");
+        System.out.print("Introduce la nota del primer examen: ");
         primeranota = sc.nextDouble();        
         primeranota = primeranota *0.4;
         
-        System.out.println("¿Qué nota quieres sacar en el trimestre: ");
+        System.out.print("¿Qué nota quieres sacar en el trimestre: ");
         mediadeseada= sc.nextDouble();
         
         segundanota = (mediadeseada-primeranota)/0.6;
